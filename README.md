@@ -8,9 +8,10 @@
 > On Windows, you need to copy the DLL file to the project Bianries
 #### download gstreamer_android .so file
 >https://zhuanlan.zhihu.com/p/460407293
-#### how to add .h file,and do like this :
+#### how to add .cpp file,and do like this :
 ```
-XXXX.h
+canot add it to .h file ,if .., it will error when package android
+XXXX.cpp
 #if PLATFORM_ANDROID
 namespace GST{
 	extern "C" {
