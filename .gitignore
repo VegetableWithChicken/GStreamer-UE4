@@ -1,32 +1,21 @@
-# Prerequisites
-*.d
+*.h linguist-language=c++
+*.cpp linguist-language=c++
+*.hpp linguist-language=c++
+*.js linguist-language=HTML
+*.css linguist-language=HTML
+*.uproject linguist-language=BluePrint
+*.uproject linguist-language=ue4
+*.html linguist-language=HTML
+*.py linguist-language=python
+# Copyright (c) Microsoft Corporation.
+# SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# Disable CRLF-mapping for all files.
+* -text
 
-# Precompiled Headers
-*.gch
-*.pch
+# Ensure GitHub detects our C++ code as C++ code.
+/Convert-KinectDK-k4a-image-to-Texture2D-for-UnrealEngine-4.25/** linguist-language=C++
+/UEBoy2019/Convert-KinectDK-k4a-image-to-Texture2D-for-UnrealEngine-4.25/** linguist-language=C++
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+# Ensure GitHub detects our Perl legacy test harness code as Perl code instead of Raku.
+*.pl linguist-language=Perl
