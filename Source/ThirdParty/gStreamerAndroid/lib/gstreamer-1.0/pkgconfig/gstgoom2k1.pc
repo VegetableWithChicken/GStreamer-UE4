@@ -1,0 +1,11 @@
+prefix=/home/jan/devel/gstreamer/cerbero/build/dist/android_universal/armv7
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: gstgoom2k1
+Description: gst-plugins-good: gstgoom2k1
+Version: 1.16.3
+Requires.private: gstreamer-pbutils-1.0 >=  1.16.0, gstreamer-base-1.0 >=  1.16.0
+Libs: -L${prefix}/lib/gstreamer-1.0  -lgstgoom2k1
+Libs.private: -lm
+Cflags: -I${includedir}

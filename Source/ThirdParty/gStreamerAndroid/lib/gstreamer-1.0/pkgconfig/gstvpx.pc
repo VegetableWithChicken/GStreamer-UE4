@@ -1,0 +1,10 @@
+prefix=/home/jan/devel/gstreamer/cerbero/build/dist/android_universal/armv7
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: gstvpx
+Description: gst-plugins-good: gstvpx
+Version: 1.16.3
+Requires.private: gstreamer-base-1.0 >=  1.16.0, gstreamer-tag-1.0 >=  1.16.0, gstreamer-video-1.0 >=  1.16.0, vpx >= 1.3.0
+Libs: -L${prefix}/lib/gstreamer-1.0  -lgstvpx
+Cflags: -I${includedir}

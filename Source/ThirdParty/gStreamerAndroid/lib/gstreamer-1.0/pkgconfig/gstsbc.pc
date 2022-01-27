@@ -1,0 +1,10 @@
+prefix=/home/jan/devel/gstreamer/cerbero/build/dist/android_universal/armv7
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: gstsbc
+Description: gst-plugins-bad: gstsbc
+Version: 1.16.3
+Requires.private: gstreamer-audio-1.0 >=  1.16.0, sbc >=  1.0
+Libs: -L${prefix}/lib/gstreamer-1.0  -lgstsbc
+Cflags: -I${includedir}

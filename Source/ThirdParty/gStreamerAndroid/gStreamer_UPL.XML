@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--LogicCore additions-->
+<root xmlns:android="http://schemas.android.com/apk/res/android">
+  <!-- 初始化-->
+    <trace enable="true"/>
+  <init>
+    <log text="gStreamer init"/>
+  </init>
+  <!--  应用于AndroidManifest.xml的可选更新 -->
+  <androidManifestUpdates>
+    <user-sdk android:targetSdkVersion="14"/>
+    
+  </androidManifestUpdates>
+  <!--  proguard的可选添加内容 -->
+  <proguardAdditions>    </proguardAdditions>
+  <!--  可选的AAR导入添加内容 -->
+  <AARImports> </AARImports>
+  <!--  可选的基础build.gradle添加内容 -->   
+  <baseBuildGradleAdditions>  </baseBuildGradleAdditions>
+  <!--  可选的基础build.gradle构建脚本添加内容 -->
+  <buildscriptGradleAdditions>  </buildscriptGradleAdditions>
+  <!--  可选的应用程序build.gradle添加内容 -->
+  <buildGradleAdditions> 
+    
+  </buildGradleAdditions>
+  <!--  在${sdk.dir}/tools/ant/build.xml导入之前，对生成的build.xml的可选添加内容 -->
+  <buildXmlPropertyAdditions> </buildXmlPropertyAdditions>
+  <!--  在ndk构建之前可以选择从Intermediate/Android/APK复制或删除的文件或目录 -->
+  <prebuildCopies>
+    <log text="PClogprebuildCopies"/>
+  </prebuildCopies>
+  <!-- 在ndk构建之后可以选择从Intermediate/Android/APK复制或删除的文件或目录 -->
+  <resourceCopies>
+    <isArch arch="armeabi-v7a">
+      <log text="PClog_resourceCopies_armeabi-v7a"/>
+      <copyFile src="$S(ProjectDir)/Source/ThirdParty/gStreamerAndroid/android/libgstreamer_android.so"
+               dst="$S(BuildDir)/libs/$S(Architecture)/libgstreamer_android.so"/>
+      <copyFile src="$S(ProjectDir)/Source/ThirdParty/gStreamerAndroid/android/libgstreamer_android.so"
+               dst="$S(BuildDir)/libs/$S(Architecture)/libgstreamer_android.so"/>
+      <copyFile src="$S(ProjectDir)/Source/ThirdParty/gStreamerAndroid/android/libc++_shared.so"
+               dst="$S(BuildDir)/libs/$S(Architecture)/libRTSPServer.so"/>
+    </isArch>
+  </resourceCopies>
+  <!-- 在Gradle之前可以选择从Intermediate/Android/APK复制或删除的文件或目录 -->
+  <gradleCopies> </gradleCopies>
+  <!-- 可以选择添加到gradle.properties的属性 -->
+  <gradleProperties> </gradleProperties>
+  <!-- 可以选择添加到Gradle命令行的参数（带有空格的前缀或将碰到前面的参数） -->
+  <gradleParameters> </gradleParameters>
+  <!-- 可选的必要最小SDK API级别 -->
+  <minimumSDKAPI> </minimumSDKAPI>
+  <!-- GameActivity.java中的GameActivity导入的可选添加内容 -->
+  <gameActivityImportAdditions>
+    <insert>
+      import java.io.File;
+      import java.io.FileOutputStream;
+      import java.io.IOException;
+      import java.io.InputStream;
+      import java.io.OutputStream;
+      import android.app.Activity;
+      import android.os.Bundle;
+      import android.widget.TextView;
+      import android.widget.Toast;
+    </insert>
+  </gameActivityImportAdditions>
+  <!-- GameActivity.java中的导入后可以选择向GameActivity添加的内容 -->
+  <gameActivityPostImportAdditions> </gameActivityPostImportAdditions>
+  <gameActivityImplementsAdditions> </gameActivityImplementsAdditions>
+   <gameActivityClassAdditions>
+     <insert>
+     </insert>
+   </gameActivityClassAdditions>
+  
+  <!-- GameActivity.java中的GameActivity类实现的可选添加内容（每行以逗号结尾） -->
+   <gameActivityOnClassAdditions> </gameActivityOnClassAdditions>
+    <!-- GameActivity.java中GameActivity onCreate元数据读取的可选添加内容 -->
+    <gameActivityReadMetadata> </gameActivityReadMetadata>
+    <!-- GameActivity.java中GameActivity onCreate的可选添加内容 -->
+    <gameActivityOnCreateAdditions> </gameActivityOnCreateAdditions>
+    <!-- GameActivity.java中GameActivity onDestroy的可选添加内容 -->
+    <gameActivityOnDestroyAdditions> </gameActivityOnDestroyAdditions>
+    <!-- GameActivity.java中GameActivity onStart的可选添加内容 -->
+    <gameActivityOnStartAdditions> </gameActivityOnStartAdditions>
+    <!-- GameActivity.java中GameActivity onStop的可选添加内容 -->
+    <gameActivityOnStopAdditions> </gameActivityOnStopAdditions>
+    <!-- GameActivity.java中GameActivity onPause的可选添加内容 -->
+    <gameActivityOnPauseAdditions> </gameActivityOnPauseAdditions>
+    <!-- GameActivity.java中GameActivity onResume的可选添加内容 -->
+    <gameActivityOnResumeAdditions>    </gameActivityOnResumeAdditions>
+    <!-- GameActivity.java中GameActivity onNewIntent的可选添加内容 -->
+    <gameActivityOnNewIntentAdditions> </gameActivityOnNewIntentAdditions>
+    <!-- GameActivity.java中GameActivity onActivityResult的可选添加内容 -->
+    <gameActivityOnActivityResultAdditions>    </gameActivityOnActivityResultAdditions>
+    <!-- GameActivity.java中加载的可选库（在libUE4.so之前） -->
+    <soLoadLibrary>    </soLoadLibrary>
+  
+  
+  
+  
+  
+  
+</root>

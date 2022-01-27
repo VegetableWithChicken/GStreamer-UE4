@@ -1,0 +1,11 @@
+prefix=/home/jan/devel/gstreamer/cerbero/build/dist/android_universal/armv7
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: gstapp
+Description: gst-plugins-base: gstapp
+Version: 1.16.3
+Requires.private: gstreamer-base-1.0 >=  1.16.0, zlib
+Libs: -L${prefix}/lib/gstreamer-1.0  -lgstapp
+Libs.private: -lm -L${libdir} -lgstapp-1.0 -lgsttag-1.0
+Cflags: -I${includedir}

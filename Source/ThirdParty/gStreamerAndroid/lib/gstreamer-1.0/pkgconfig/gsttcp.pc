@@ -1,0 +1,10 @@
+prefix=/home/jan/devel/gstreamer/cerbero/build/dist/android_universal/armv7
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: gsttcp
+Description: gst-plugins-base: gsttcp
+Version: 1.16.3
+Requires.private: gio-2.0, gstreamer-base-1.0 >=  1.16.0, gstreamer-net-1.0 >=  1.16.0
+Libs: -L${prefix}/lib/gstreamer-1.0  -lgsttcp
+Cflags: -I${includedir}

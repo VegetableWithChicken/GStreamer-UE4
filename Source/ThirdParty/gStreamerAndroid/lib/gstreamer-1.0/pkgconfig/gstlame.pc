@@ -1,0 +1,11 @@
+prefix=/home/jan/devel/gstreamer/cerbero/build/dist/android_universal/armv7
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: gstlame
+Description: gst-plugins-good: gstlame
+Version: 1.16.3
+Requires.private: gstreamer-audio-1.0 >=  1.16.0
+Libs: -L${prefix}/lib/gstreamer-1.0  -lgstlame
+Libs.private: -lmp3lame
+Cflags: -I${includedir}

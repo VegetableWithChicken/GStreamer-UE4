@@ -1,0 +1,10 @@
+prefix=/home/jan/devel/gstreamer/cerbero/build/dist/android_universal/armv7
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: gstudp
+Description: gst-plugins-good: gstudp
+Version: 1.16.3
+Requires.private: gstreamer-1.0 >=  1.16.0, gstreamer-base-1.0 >=  1.16.0, gstreamer-net-1.0 >=  1.16.0, gio-2.0
+Libs: -L${prefix}/lib/gstreamer-1.0  -lgstudp
+Cflags: -I${includedir}

@@ -1,0 +1,10 @@
+prefix=/home/jan/devel/gstreamer/cerbero/build/dist/android_universal/armv7
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: gstrfbsrc
+Description: gst-plugins-bad: gstrfbsrc
+Version: 1.16.3
+Requires.private: gstreamer-base-1.0 >=  1.16.0, gstreamer-video-1.0 >=  1.16.0, gio-2.0
+Libs: -L${prefix}/lib/gstreamer-1.0  -lgstrfbsrc
+Cflags: -I${includedir}

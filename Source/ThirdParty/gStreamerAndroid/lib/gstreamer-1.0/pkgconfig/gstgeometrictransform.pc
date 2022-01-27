@@ -1,0 +1,11 @@
+prefix=/home/jan/devel/gstreamer/cerbero/build/dist/android_universal/armv7
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: gstgeometrictransform
+Description: gst-plugins-bad: gstgeometrictransform
+Version: 1.16.3
+Requires.private: gstreamer-base-1.0 >=  1.16.0, gstreamer-video-1.0 >=  1.16.0
+Libs: -L${prefix}/lib/gstreamer-1.0  -lgstgeometrictransform
+Libs.private: -lm
+Cflags: -I${includedir}

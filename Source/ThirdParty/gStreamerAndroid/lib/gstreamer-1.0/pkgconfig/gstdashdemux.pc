@@ -1,0 +1,11 @@
+prefix=/home/jan/devel/gstreamer/cerbero/build/dist/android_universal/armv7
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: gstdashdemux
+Description: gst-plugins-bad: gstdashdemux
+Version: 1.16.3
+Requires.private: gstreamer-base-1.0 >=  1.16.0, gstreamer-tag-1.0 >=  1.16.0, gstreamer-net-1.0 >=  1.16.0, gio-2.0, libxml-2.0 >=  2.8
+Libs: -L${prefix}/lib/gstreamer-1.0  -lgstdashdemux
+Libs.private: -L${libdir} -lgstadaptivedemux-1.0 -lgsturidownloader-1.0 -lgstisoff-1.0
+Cflags: -I${includedir}

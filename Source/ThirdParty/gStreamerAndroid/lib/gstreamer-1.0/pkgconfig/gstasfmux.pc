@@ -1,0 +1,10 @@
+prefix=/home/jan/devel/gstreamer/cerbero/build/dist/android_universal/armv7
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: gstasfmux
+Description: gst-plugins-bad: gstasfmux
+Version: 1.16.3
+Requires.private: gstreamer-base-1.0 >=  1.16.0, gstreamer-rtp-1.0 >=  1.16.0
+Libs: -L${prefix}/lib/gstreamer-1.0  -lgstasfmux
+Cflags: -I${includedir}

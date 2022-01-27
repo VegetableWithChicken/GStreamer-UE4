@@ -1,0 +1,10 @@
+prefix=/home/jan/devel/gstreamer/cerbero/build/dist/android_universal/armv7
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: gsty4mdec
+Description: gst-plugins-bad: gsty4mdec
+Version: 1.16.3
+Requires.private: gstreamer-base-1.0 >=  1.16.0, gstreamer-video-1.0 >=  1.16.0
+Libs: -L${prefix}/lib/gstreamer-1.0  -lgsty4mdec
+Cflags: -I${includedir}

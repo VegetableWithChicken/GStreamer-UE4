@@ -1,0 +1,10 @@
+prefix=/home/jan/devel/gstreamer/cerbero/build/dist/android_universal/armv7
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: gstimagefreeze
+Description: gst-plugins-good: gstimagefreeze
+Version: 1.16.3
+Requires.private: glib-2.0 >=  2.40.0, gobject-2.0, gstreamer-1.0 >=  1.16.0
+Libs: -L${prefix}/lib/gstreamer-1.0  -lgstimagefreeze
+Cflags: -I${includedir}

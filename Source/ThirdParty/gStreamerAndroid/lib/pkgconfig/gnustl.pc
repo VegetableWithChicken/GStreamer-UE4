@@ -1,0 +1,15 @@
+prefix=/home/jan/devel/gstreamer/cerbero/build/dist/android_universal/armv7
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+datarootdir=${prefix}/share
+datadir=${datarootdir}
+
+Name: gnustl
+Description: gnustl
+Version: 2.0
+Requires: 
+Requires.private: 
+Libs: -L${libdir} ${libdir}/libc++_shared.so ${libdir}/libandroid_support.a  ${libdir}/libunwind.a 
+Libs.private: 
+Cflags: -I/home/jan/devel/gstreamer/cerbero/build/android-ndk-18/sources/cxx-stl/llvm-libc++/include -I/home/jan/devel/gstreamer/cerbero/build/android-ndk-18/sources/android/support/include 

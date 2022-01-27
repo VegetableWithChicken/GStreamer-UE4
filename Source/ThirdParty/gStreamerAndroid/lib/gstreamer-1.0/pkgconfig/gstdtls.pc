@@ -1,0 +1,10 @@
+prefix=/home/jan/devel/gstreamer/cerbero/build/dist/android_universal/armv7
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: gstdtls
+Description: gst-plugins-bad: gstdtls
+Version: 1.16.3
+Requires.private: gstreamer-1.0 >=  1.16.0, libcrypto, openssl >=  1.0.1
+Libs: -L${prefix}/lib/gstreamer-1.0  -lgstdtls
+Cflags: -I${includedir}

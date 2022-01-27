@@ -1,0 +1,10 @@
+prefix=/home/jan/devel/gstreamer/cerbero/build/dist/android_universal/armv7
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: gstsrtp
+Description: gst-plugins-bad: gstsrtp
+Version: 1.16.3
+Requires.private: gstreamer-rtp-1.0 >=  1.16.0, gstreamer-video-1.0 >=  1.16.0, libsrtp >=  1.6.0
+Libs: -L${prefix}/lib/gstreamer-1.0  -lgstsrtp
+Cflags: -I${includedir}
